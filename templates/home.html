@@ -28,17 +28,23 @@
        <img src="https://4a423833-5be8-4223-84c8-810c5d97424a-00-38v3qthw5sm2w.sisko.replit.dev:5000/static/image-2.jpg" ><img src="https://4a423833-5be8-4223-84c8-810c5d97424a-00-38v3qthw5sm2w.sisko.replit.dev:5000/static/image-3.jpg"><img src="https://4a423833-5be8-4223-84c8-810c5d97424a-00-38v3qthw5sm2w.sisko.replit.dev:5000/static/image-4.jpg" >
     </div>
   
-    <h3 class="mt-4">About Honey Land</h3>
+    <h3 class="m-4 text-center">About Honey Land</h3>
     <p>Welcome to Honey Land, where sweetness meets tradition! We are a local bakery dedicated to crafting delicious, high-quality treats that warm your heart and delight your taste buds. From freshly baked bread to decadent pastries and custom cakes, every item is made with love, care, and the finest ingredients.
     Come visit us and discover the taste of home, happiness, and honey-like sweetness in every bite!</p>
-  
-    <h3>Dessert Menu</h3>
     
-    <P>we'll see them later</P>
-    <div class="text-center">
+    <h3 class="text-center m-3">Our Menu</h3>
+    
+    <div>
+         {% for item in items %}
+       {% include 'items.html' %}
+      {% endfor %}
+    </div>
+    
+    <div class="text-center mt-5">
       <button>Contact Us</button>
       <p>Copyright 2024 HoneyLand</p>
     </div>
+    
     </div>
 </body>
 </html>
